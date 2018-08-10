@@ -1,26 +1,32 @@
-## Proposed changes
+## Changes this Pull Request ntroduces
 
-Describe the big picture of your changes here to communicate to the maintainers why we should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to that issue.
+Describe the big picture of your changes here to communicate to the reviewers why they should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to the trello card (if available).
 
 ## Types of changes
 
-What types of changes does your code introduce to Appium?
-_Put an `x` in the boxes that apply_
+What types of changes does your code introduce to Aggregation?  
+_Put an `x` in the boxes that applies_ 
 
-- [ ] Bugfix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Bugfix (change which fixes an issue)
+- [ ] New feature (change which adds functionality)
+- [ ] Logging purpose (change which adds logging for errors or data)
+- [ ] Refactoring (change which does not change external behaviour yet improves internal structure)
+- [ ] Style (change that do not affect the meaning of the code: white-space, formatting, missing semi-colons, etc) 
 
-## Checklist
+## Reviewer's Checklist
 
-_Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code._
+This is a guideline for the reviewer on what to check to ensure that the quality of the code is kept at a Tink standard.  
+_Put an `x` in the boxes that have been checked and fullfiled_ 
 
-- [ ] I have read the [CONTRIBUTING](https://github.com/appium/appium/blob/master/CONTRIBUTING.md) doc
-- [ ] I have signed the [CLA](https://cla.js.foundation/appium/appium)
-- [ ] Lint and unit tests pass locally with my changes
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] I have added necessary documentation (if appropriate)
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] The code packages follow the [Tink structure](https://docs.google.com/document/d/18pSzbRPlHYbKJtCDntMYE_4TqNWFdyTFuETq6lyNZBk/edit#heading=h.f3ao0xse8vu5)
+- [ ] The code is clean from `development-only` code (setDebugOutput, println) 
+- [ ] The known errors are being handled and unknown logged
+- [ ] The `JSON/XML` values are sanitized (Not hardcoded from string concatenation of input values; Use `Jackson`!) 
+- [ ] The code uses a [`Constants Class`](https://docs.google.com/document/d/18pSzbRPlHYbKJtCDntMYE_4TqNWFdyTFuETq6lyNZBk/edit#heading=h.6tr2fkwudh2m) for constants 
+- [ ] The code uses `Catalog` for translatable strings
+- [ ] The code follows the style, formatting and naming conventions of [Tink](https://docs.google.com/document/d/18pSzbRPlHYbKJtCDntMYE_4TqNWFdyTFuETq6lyNZBk/edit#heading=h.hxfhn3yt7me0)
+- [ ] Follow the code for logical errors
+
 
 ## Further comments
 
