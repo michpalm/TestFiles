@@ -1,19 +1,12 @@
-## Changes this Pull Request ntroduces
+---------------------------------------
+## Changes this Pull Request Introduces
+---------------------------------------
 <!---Describe the big picture of your changes here to communicate to the reviewers why they should accept this pull request. If it fixes a bug or resolves a feature request, be sure to link to the trello card (if available).--->
 
-## Types of changes
 
-What types of changes does your code introduce to Aggregation?  
-_Put an `x` in the boxes that applies_ 
-
-- [ ] Bugfix (change which fixes an issue)
-- [ ] New feature (change which adds functionality)
-- [ ] Logging purpose (change which adds logging for errors or data)
-- [ ] Refactoring (change which does not change external behaviour yet improves internal structure)
-- [ ] Style (change that do not affect the meaning of the code: white-space, formatting, missing semi-colons, etc) 
-
+---------------------------------------
 ## Reviewer's Checklist
-
+---------------------------------------
 This is a guideline for the reviewer on what to check to ensure that the quality of the code is kept at a Tink standard.  
 
 _Put an `x` in the boxes that have been checked and fullfiled_ 
@@ -27,5 +20,7 @@ _Put an `x` in the boxes that have been checked and fullfiled_
 - [ ] The code follows the style, formatting and naming conventions of [Tink](https://docs.google.com/document/d/18pSzbRPlHYbKJtCDntMYE_4TqNWFdyTFuETq6lyNZBk/edit#heading=h.hxfhn3yt7me0)
 - [ ] Follow the code for logical errors
 
+---------------------------------------
 ## Further comments
+---------------------------------------
 <!---If this is a relatively large or complex change, kick off the discussion by explaining why you chose the solution you did and what alternatives you considered, etc...--->
